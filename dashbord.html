@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full HTML Background Color Change</title>
+  <style>
+    /* Optional styles */
+    html {
+      transition: background-color 0.3s ease;
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div>Move your mouse anywhere on the page to change the background color of the entire page.</div>
+
+  <script>
+    // Change background color of the entire HTML page on mousemove
+    document.addEventListener('mousemove', function() {
+      // Change the background color of the <html> element
+      document.documentElement.style.backgroundColor = 'lightblue';
+    });
+  </script>
+
+</body>
+</html>
